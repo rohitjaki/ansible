@@ -35,7 +35,7 @@ class ExampleInventory(object):
     # Example inventory for testing.
     def example_inventory(self):
         return {
-            'lwgroup': {
+            'rohit load balancer': {
                 'hosts': ['192.168.28.71', '192.168.28.72'],
                 'vars': {
                     'ansible_ssh_user': 'vagrant',
