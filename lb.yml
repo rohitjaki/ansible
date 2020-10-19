@@ -1,0 +1,14 @@
+#tasks for load balancer
+
+- name: install haproxy software
+  package:
+    name: "haproxy"
+    state: present
+- name: copy my conf file of lb
+  template:
+    src: "haproaxy.cfg"
+    dest: "/etc/haproaxy/haproaxy.cfg"
+- name: start service lb
+  service:
+    name: "haproaxy"
+    state: started
